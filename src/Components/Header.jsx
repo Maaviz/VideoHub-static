@@ -48,9 +48,6 @@ const Header = () => {
                 <Link to={'/videos'}>Videos</Link>
               </Button>
               <Button onClick={onClose} colorScheme="purple" variant={'ghost'}>
-                <Link to={'/videos?category=free'}>Free Videos</Link>
-              </Button>
-              <Button onClick={onClose} colorScheme="purple" variant={'ghost'}>
                 <Link to={'/upload'}>Upload Video</Link>
               </Button>
             </VStack>
