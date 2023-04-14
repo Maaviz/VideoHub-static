@@ -42,7 +42,7 @@ const Home = () => {
         >
           <Image
             src={img5}
-            h={['40', '400']}
+            h={['40', '300']}
             filter={'hue-rotate(-130deg)'}
           />
 
@@ -75,7 +75,7 @@ const MyCarousel = () => (
     showArrows={false}
     showStatus={false}
     showThumbs={false}
-    interval={1000}
+    interval={2000}
   >
     <Box w={'full'} h={'100vh'}>
       <Image src={img1} />
