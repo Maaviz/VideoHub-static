@@ -42,7 +42,7 @@ const Home = () => {
         >
           <Image
             src={img5}
-            h={['40', '300']}
+            h={['40', '400']}
             filter={'hue-rotate(-130deg)'}
           />
 
@@ -70,8 +70,8 @@ const Home = () => {
 
 const MyCarousel = () => (
   <Carousel
-    autoPlay
-    infiniteLoop
+    // autoPlay
+    // infiniteLoop
     showArrows={false}
     showStatus={false}
     showThumbs={false}
