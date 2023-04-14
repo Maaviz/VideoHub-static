@@ -1,4 +1,13 @@
-import { Box, Container, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Button,
+  Container,
+  HStack,
+  Heading,
+  Image,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -7,6 +16,8 @@ import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
 import img4 from '../assets/4.jpg';
 import img5 from '../assets/5.png';
+import { AiOutlineArrowDown, AiOutlineSend } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const headingOptions = {
   pos: 'absolute',
@@ -22,8 +33,15 @@ const Home = () => {
   return (
     <Box>
       <MyCarousel />
+      <HStack pos={'absolute'} top={'70vh'} right={'10'}>
+        <Button borderRadius={'60px'} colorScheme="purple" variant={'outline'}>
+          <a href={'#scroll'}>
+            <AiOutlineArrowDown size={30} />
+          </a>
+        </Button>
+      </HStack>
 
-      <Container maxW={'container.xl'} minH={'100vh'} p={'16'}>
+      <Container maxW={'container.xl'} minH={'100vh'} p={'16'} id='scroll'>
         <Heading
           textTransform={'uppercase'}
           py={'2'}
@@ -46,7 +64,12 @@ const Home = () => {
             filter={'hue-rotate(-130deg)'}
           />
 
-          <Text letterSpacing={'widest'} lineHeight={'190%'} textAlign={'center'} p={['4','16']} >
+          <Text
+            letterSpacing={'widest'}
+            lineHeight={'190%'}
+            textAlign={'center'}
+            p={['4', '16']}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo
             tempora deleniti quod, est eos veniam autem asperiores rem, nam
             laudantium ut, similique ducimus amet sequi et voluptas iusto rerum
